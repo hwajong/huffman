@@ -45,10 +45,10 @@ static int compare_charprob_desc(const void *A, const void *B)
 class HuffmanCodec 
 {
 private:
-	int tsize;					// 테이블 사이즈
-	CharProb *ptable;			// 확률 테이블 
+	int tsize;                  // 테이블 사이즈
+	CharProb *ptable;           // 확률 테이블 
 
-	 map<char,string> code_map;	// 문자 - 코드 맵 
+	 map<char,string> code_map; // 문자 - 코드 맵 
 
 public:
 	void encode(const char *text, const char *fname_out)
